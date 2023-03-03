@@ -3,6 +3,11 @@ class ListsController < ApplicationController
     @lists = List.all
   end
 
+  def show
+    @list = List.find(params[:id])
+    @bookmarks = Bookmark.new
+  end
+
   def new
     @list = List.new
   end
