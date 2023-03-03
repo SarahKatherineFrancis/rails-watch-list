@@ -7,7 +7,7 @@
   <h3>My Lists</h3>
   <div class="row">
         <%@lists.each do |list|%>
-        <div class="col-3 col-sm-12 col-m-4">
+        <div class="col-12 col-m-4 col-l-3">
             <div class="card" style="width: 18rem; background-image: url(https://images.unsplash.com/photo-1535016120720-40c646be5580?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80)">
               <div class="card-body">
                 <h4 class="card-title text-center text-white"><%= link_to list.name, list_path(list)%></h4>
